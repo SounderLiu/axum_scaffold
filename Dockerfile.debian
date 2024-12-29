@@ -48,6 +48,8 @@ RUN apt-get update && apt-get install -y \
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
 
+EXPOSE 3000
+
 WORKDIR /axum_scaffold
 
 # Copy our build
