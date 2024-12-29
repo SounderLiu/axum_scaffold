@@ -13,6 +13,6 @@ impl Settings {
 
         let env = std::env::var("RUN_MODE").unwrap_or_else(|_| "development".into());
         s.merge(File::with_name(&format!("config/{}", env)))?;
-        s.try_into()
+        s.try_deserialize()
     }
 }

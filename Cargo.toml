@@ -16,3 +16,7 @@ tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 http = "1.2.0"
 home = "0.5.11"
+sqlx = { version = "0.8.2", features = [ "runtime-tokio-native-tls", "postgres" ] }
+
+config = "0.13"  # 请使用最新版本或您需要的特定版本
+thiserror = "1.0"
