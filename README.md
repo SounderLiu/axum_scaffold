@@ -85,5 +85,5 @@ Configuration Management: Stores environment-specific configurations separately,
 ### Build Docker Image
 ```shell
 sudo docker build -t axum_scaffold:debian -f Dockerfile.debian .
-
+sudo docker run -p 3000:3000 axum_scaffold:debian
 ```
