@@ -32,7 +32,7 @@ async fn main() {
         .layer(tower_http::trace::TraceLayer::new_for_http());
 
     // Define the address to run the server on
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([0, 0, 0, 0], 3000));
 
     tracing::info!("Listening on {}", addr);
 
