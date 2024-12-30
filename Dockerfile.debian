@@ -1,8 +1,8 @@
 ####################################################################################################
 ## Builder
 ####################################################################################################
-#FROM rust:latest AS builder
-FROM rust:slim-bookworm AS builder
+FROM rust:latest AS builder
+#FROM rust:slim-bookworm AS builder
 
 RUN update-ca-certificates
 
@@ -36,8 +36,8 @@ RUN cargo build --release
 ####################################################################################################
 ## Final image
 ####################################################################################################
-#FROM debian:bookworm-slim
-FROM rust:slim-bookworm
+FROM debian:bookworm-slim
+#FROM rust:slim-bookworm
 #FROM ubuntu:24.04
 
 #RUN apt-get update && apt-get install -y \
